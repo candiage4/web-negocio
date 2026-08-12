@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcan Global Soluciones | Comercializadora de Aceros, Insumos e Industria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        arcanTeal: '#10B981',
+                        arcanCyan: '#06B6D4',
+                        arcanBlue: '#2563EB',
+                        arcanDarkBlue: '#0F172A',
+                        arcanSteel: '#334155',
+                        arcanLight: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-arcan {
+            background: linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #2563EB 100%);
+        }
+        .text-gradient-arcan {
+            background: linear-gradient(135deg, #059669 0%, #0891B2 50%, #2563EB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-pattern {
+            background-color: #0b1329;
+            background-image: radial-gradient(#1e293b 1.5px, transparent 1.5px), radial-gradient(#1e293b 1.5px, #0b1329 1.5px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+        }
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .pulse-whatsapp {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            animation: pulse-wa 2s infinite;
+        }
+        @keyframes pulse-wa {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- TOP NOTIFICATION & QUICK CONTACT BAR -->
+    <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center md:justify-start">
+                <span class="inline-flex items-center text-cyan-400 font-semibold">
+                    <i class="fa-solid fa-circle-check mr-1.5 text-xs text-emerald-400"></i> Soluciones precisas a tus necesidades
+                </span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <span class="hidden sm:inline text-slate-300">
+                    <i class="fa-solid fa-truck-fast text-cyan-400 mr-1"></i> Envío directo a obra o instalación
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:+526183296467" class="hover:text-white transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> +52 (618) 329 6467
+                </a>
+                <a href="https://wa.me/522225318652" target="_blank" class="hover:text-white transition flex items-center gap-1.5">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> +52 (222) 531 8652
+                </a>
+                <a href="mailto:atencion_clientes@arcangs.com" class="hover:text-white transition hidden lg:flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope text-cyan-400"></i> atencion_clientes@arcangs.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND TYPOGRAPHY -->
+                <a href="#" class="flex flex-col justify-center py-2 transition transform hover:scale-105 duration-200">
+                    <span class="font-display font-black text-lg sm:text-2xl tracking-wider text-teal-600">
+                        ARCAN GLOBAL SOLUCIONES
+                    </span>
+                    <span class="font-display font-bold text-[10px] sm:text-xs tracking-[0.25em] text-blue-600 uppercase">
+                        IMPULSANDO TU NEGOCIO
+                    </span>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                    <a href="#inicio" class="hover:text-cyan-600 transition-colors py-2 border-b-2 border-transparent hover:border-cyan-500">Inicio</a>
+                    <a href="#aceros" class="hover:text-cyan-600 transition-colors py-2 border-b-2 border-transparent hover:border-cyan-500">Especialidad Aceros</a>
+                    <a href="#catalogo" class="hover:text-cyan-600 transition-colors py-2 border-b-2 border-transparent hover:border-cyan-500">Catálogo e Insumos</a>
+                    <a href="#nosotros" class="hover:text-cyan-600 transition-colors py-2 border-b-2 border-transparent hover:border-cyan-500">Confianza y Proceso</a>
+                    <a href="#cotizador" class="hover:text-cyan-600 transition-colors py-2 border-b-2 border-transparent hover:border-cyan-500">Cotizador Rápido</a>
+                </div>
+
+                <!-- RIGHT ACTION BUTTONS -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#cotizador" class="gradient-arcan text-white font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Solicitar Cotización
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobileMenuBtn" class="lg:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+            <a href="#inicio" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Inicio</a>
+            <a href="#aceros" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Especialidad Aceros</a>
+            <a href="#catalogo" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Catálogo General</a>
+            <a href="#nosotros" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Confianza Arcan</a>
+            <a href="#cotizador" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Cotizador Rápido</a>
+            <a href="#contacto" class="block py-2 text-slate-700 font-medium hover:text-cyan-600">Contacto Directo</a>
+            <div class="pt-2">
+                <a href="https://wa.me/526183296467?text=Hola,%20requiero%20una%20cotización" target="_blank" class="w-full gradient-arcan text-white font-bold py-3 rounded-xl text-center block">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative hero-pattern text-white overflow-hidden py-16 lg:py-24">
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-emerald-500/20 rounded-full filter blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-cyan-500/20 rounded-full filter blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-emerald-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Soluciones precisas a tus necesidades
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-display font-black leading-tight tracking-tight">
+                        Comercialización Integral de <span class="text-gradient-arcan">Aceros, Insumos e Industria</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Especialistas en materiales estructurales de acero, vigas, láminas, PTR’s, herramientas y cualquier requerimiento o suministro para oficinas, talleres, plantas e industrias a nivel nacional.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#cotizador" class="w-full sm:w-auto gradient-arcan text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/25 transition transform hover:-translate-y-1 text-center text-base">
+                            <i class="fa-solid fa-calculator mr-2"></i> Cotizar Materiales
+                        </a>
+                        <a href="https://wa.me/526183296467?text=Hola%20ARCAN%20GLOBAL,%20necesito%20atención%20para%20un%20pedido" target="_blank" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-600 font-semibold px-8 py-4 rounded-xl transition text-center text-base flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i> WhatsApp (+52 618 329 6467)
+                        </a>
+                    </div>
+
+                    <!-- Key highlights bullets -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm text-slate-300 font-medium">Garantía de Calidad</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-truck-moving text-cyan-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm text-slate-300 font-medium">Logística Nacional</span>
+                        </div>
+                        <div class="flex items-center gap-2 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-clock-rotate-left text-blue-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm text-slate-300 font-medium">Respuesta Rápida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Interactive Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-dark rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden border border-slate-700/60">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+                            <div>
+                                <h3 class="text-lg font-bold text-white font-display">Atención Inmediata</h3>
+                                <p class="text-xs text-slate-400">Cotiza con nuestros especialistas hoy</p>
+                            </div>
+                            <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded-full border border-emerald-500/30">
+                                En Línea
+                            </span>
+                        </div>
+
+                        <!-- Direct Contacts Card Box -->
+                        <div class="space-y-4">
+                            <!-- Contact 1 -->
+                            <div class="bg-slate-800/90 p-4 rounded-2xl border border-slate-700 hover:border-cyan-500 transition">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Atención Comercial & Ventas</span>
+                                    <i class="fa-solid fa-user-tie text-slate-400"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Ventas y Cotizaciones</h4>
+                                <div class="mt-2 space-y-1.5 text-xs text-slate-300">
+                                    <p class="flex items-center gap-2">
+                                        <i class="fa-solid fa-mobile-screen text-emerald-400"></i>
+                                        <strong>Celular / WhatsApp:</strong> +52 (618) 329 6467
+                                    </p>
+                                    <p class="flex items-center gap-2">
+                                        <i class="fa-solid fa-envelope text-cyan-400"></i>
+                                        <strong>Correos:</strong> julio.arjon@arcangs.com | jesus.candia@arcangs.com
+                                    </p>
+                                </div>
+                                <div class="mt-3 flex gap-2">
+                                    <a href="https://wa.me/526183296467?text=Hola,%20requiero%20una%20cotizaci%C3%B3n" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-3 rounded-lg text-xs text-center flex items-center justify-center gap-1.5 transition">
+                                        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                                    </a>
+                                    <a href="mailto:julio.arjon@arcangs.com" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-3 rounded-lg text-xs text-center flex items-center justify-center gap-1.5 transition">
+                                        <i class="fa-solid fa-envelope"></i> Enviar Email
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Contact 2 -->
+                            <div class="bg-slate-800/90 p-4 rounded-2xl border border-slate-700 hover:border-cyan-500 transition">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Atención a Clientes</span>
+                                    <i class="fa-solid fa-headset text-slate-400"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Servicio & Pedidos</h4>
+                                <div class="mt-2 space-y-1.5 text-xs text-slate-300">
+                                    <p class="flex items-center gap-2">
+                                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                                        <strong>WhatsApp:</strong> +52 (222) 531 8652
+                                    </p>
+                                    <p class="flex items-center gap-2">
+                                        <i class="fa-solid fa-envelope text-cyan-400"></i>
+                                        <strong>Correo:</strong> atencion_clientes@arcangs.com
+                                    </p>
+                                </div>
+                                <div class="mt-3 flex gap-2">
+                                    <a href="https://wa.me/522225318652?text=Hola,%20requiero%20atenci%C3%B3n%20para%20un%20pedido%20de%20materiales" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-3 rounded-lg text-xs text-center flex items-center justify-center gap-1.5 transition">
+                                        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                                    </a>
+                                    <a href="mailto:atencion_clientes@arcangs.com" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-3 rounded-lg text-xs text-center flex items-center justify-center gap-1.5 transition">
+                                        <i class="fa-solid fa-envelope"></i> Enviar Email
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STEEL SPECIALTY SECTION -->
+    <section id="aceros" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-600 font-bold uppercase tracking-wider text-xs sm:text-sm">Especialidad Estructural e Industrial</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2">
+                    Líderes en Aceros y Materiales de Construcción
+                </h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Suministramos perfiles, acero estructural, láminas y tubería de alta especificación para contratistas, desarrolladores e industrias.
+                </p>
+            </div>
+
+            <!-- Grid of Main Steel Products -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product Card 1: Vigas -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-slate-900 text-cyan-400 flex items-center justify-center text-2xl mb-5 shadow-inner">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Estructural</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Vigas IPR e IPS</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Soporte estructural rígido para edificaciones, naves industriales y puentes. Variedad de peraltes y calibres estandarizados.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Perfil IPR y IPS norma ASTM</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Largos comerciales e industriales</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Certificado de calidad de molino</li>
+                        </ul>
+                    </div>
+                    <button onclick="prefillQuote('Vigas IPR / IPS')" class="w-full bg-slate-900 hover:bg-cyan-700 text-white font-semibold py-2.5 rounded-xl text-sm transition">
+                        Cotizar Vigas
+                    </button>
+                </div>
+
+                <!-- Product Card 2: PTR's y Perfiles -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-slate-900 text-emerald-400 flex items-center justify-center text-2xl mb-5 shadow-inner">
+                            <i class="fa-solid fa-border-all"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Perfiles Tubulares</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">PTR’s y Perfiles Comercial</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Perfil Tubular Comercial y Estructural de alta resistencia. Ideal para estructuras ligeras, marcos, portones y herrería.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Calibres desde 14 hasta 1/4"</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Cuadrados y Rectangulares</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tubo cédula 40 y 80</li>
+                        </ul>
+                    </div>
+                    <button onclick="prefillQuote('PTRs y Perfiles')" class="w-full bg-slate-900 hover:bg-cyan-700 text-white font-semibold py-2.5 rounded-xl text-sm transition">
+                        Cotizar PTR's
+                    </button>
+                </div>
+
+                <!-- Product Card 3: Láminas -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-slate-900 text-blue-400 flex items-center justify-center text-2xl mb-5 shadow-inner">
+                            <i class="fa-solid fa-sheet-plastic"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Cubiertas & Techados</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Láminas y Placas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Lámina galvanizada, Pintro R-101, RN-100, Losacero y Placa de acero estructural a la medida exigida por tu obra.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Acanaladas, Lisas y Losacero</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Acabado Zintro, Pintro y Ostra</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Cortadas a medida especial</li>
+                        </ul>
+                    </div>
+                    <button onclick="prefillQuote('Láminas y Placas de Acero')" class="w-full bg-slate-900 hover:bg-cyan-700 text-white font-semibold py-2.5 rounded-xl text-sm transition">
+                        Cotizar Láminas
+                    </button>
+                </div>
+
+                <!-- Product Card 4: Varilla y Mallas -->
+                <div class="bg-white rounded-2xl p-6 shadow-md border border-slate-200 hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-slate-900 text-teal-400 flex items-center justify-center text-2xl mb-5 shadow-inner">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Cimentación</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Varilla, Malla y Alambre</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Acero de refuerzo, Varilla corrugada Grado 42, Malla electrosoldada, Alambrón y Armex para cualquier construcción.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Varilla desde 3/8" hasta 1 1/2"</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Malla en rollo o hoja</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Suministro por toneladas o paquete</li>
+                        </ul>
+                    </div>
+                    <button onclick="prefillQuote('Varilla Corrugada y Malla')" class="w-full bg-slate-900 hover:bg-cyan-700 text-white font-semibold py-2.5 rounded-xl text-sm transition">
+                        Cotizar Varilla
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Quick Specs Highlight Banner -->
+            <div class="mt-12 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-6 sm:p-10 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl border border-slate-700">
+                <div class="space-y-2 text-center md:text-left">
+                    <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">¿Requieres un calibre o norma especial?</span>
+                    <h3 class="text-2xl sm:text-3xl font-display font-extrabold">Ángulos, Soleras, Canales UPR y Canaletas</h3>
+                    <p class="text-slate-300 text-sm max-w-xl">
+                        Contamos con catálogo extendido de perfiles comerciales y aleaciones para habilitación metálica e industrial.
+                    </p>
+                </div>
+                <a href="https://wa.me/526183296467?text=Hola,%20requiero%20asesor%C3%ADa%20para%20material%20de%20acero%20especial" target="_blank" class="gradient-arcan text-white font-bold px-8 py-3.5 rounded-xl shadow-md hover:shadow-emerald-500/30 transition whitespace-nowrap text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Consultar Disponibilidad
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE SOURCING SECTION -->
+    <section id="catalogo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 font-bold uppercase tracking-wider text-xs sm:text-sm">Suministros Multisectoriales</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2">
+                    Comercializamos Prácticamente Cualquier Insumo que Necesite tu Empresa
+                </h2>
+                <p class="text-slate-600 mt-4 text-base sm:text-lg">
+                    Simplificamos las compras corporativas e industriales de tu negocio. Si existe en el mercado, en <strong>ARCAN GLOBAL SOLUCIONES</strong> lo localizamos y entregamos con las mejores condiciones.
+                </p>
+            </div>
+
+            <!-- Interactive Category Tabs & Filterable Grid -->
+            <div class="flex justify-center flex-wrap gap-2 sm:gap-4 mb-10">
+                <button onclick="filterCatalog('all')" class="cat-btn active px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition bg-slate-900 text-white shadow" data-cat="all">
+                    Todos los Rubros
+                </button>
+                <button onclick="filterCatalog('herramientas')" class="cat-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200" data-cat="herramientas">
+                    <i class="fa-solid fa-screws-tilting mr-1.5"></i> Herramientas & Taller
+                </button>
+                <button onclick="filterCatalog('industria')" class="cat-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200" data-cat="industria">
+                    <i class="fa-solid fa-industry mr-1.5"></i> Insumos Industriales & EPP
+                </button>
+                <button onclick="filterCatalog('oficina')" class="cat-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200" data-cat="oficina">
+                    <i class="fa-solid fa-building mr-1.5"></i> Equipamiento de Oficina
+                </button>
+                <button onclick="filterCatalog('especiales')" class="cat-btn px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition bg-slate-100 text-slate-700 hover:bg-slate-200" data-cat="especiales">
+                    <i class="fa-solid fa-box-open mr-1.5"></i> Pedidos Especiales
+                </button>
+            </div>
+
+            <!-- Catalog Items Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="catalogGrid">
+                
+                <!-- Item 1: Herramientas Electroportátiles -->
+                <div class="cat-item herramientas bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-cyan-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-plug-circle-bolt"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full border border-cyan-200">Talleres & Obra</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Herramienta Eléctrica y Neumática</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Esmeriladoras, rotomartillos, soldadoras inverter, compresores y pistolas de impacto para uso pesado.
+                    </p>
+                    <button onclick="prefillQuote('Herramientas Eléctricas y Neumáticas')" class="text-cyan-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Item 2: EPP e Insumos de Seguridad -->
+                <div class="cat-item industria bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-emerald-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-hard-hat"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full border border-emerald-200">Seguridad Industrial</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Equipo de Protección Personal (EPP)</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Cascos de seguridad, chalecos reflejantes, botas con casquillo, guantes de carnaza y arneses normados.
+                    </p>
+                    <button onclick="prefillQuote('Equipo de Protección Personal EPP')" class="text-emerald-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Item 3: Mobiliario y Equipamiento Corporativo -->
+                <div class="cat-item oficina bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-blue-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-blue-50 text-blue-700 px-3 py-1 rounded-full border border-blue-200">Corporativo</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Mobiliario y Papelería Institucional</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Escritorios ergonómicos, archiveros metálicos, cómputo, consumibles de papelería al mayoreo y limpieza.
+                    </p>
+                    <button onclick="prefillQuote('Mobiliario y Consumibles de Oficina')" class="text-blue-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Item 4: Ferretería y Tornillería -->
+                <div class="cat-item herramientas bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-cyan-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-cyan-50 text-cyan-700 px-3 py-1 rounded-full border border-cyan-200">Ferretería</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Tornillería, Anclajes y Fijación</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Tornillería grado 5 y 8, taquetes expansivos, varilla roscada, discos de corte, abrasivos y electrodos.
+                    </p>
+                    <button onclick="prefillQuote('Tornillería y Abrasivos')" class="text-cyan-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Item 5: MRO y Químicos Industriales -->
+                <div class="cat-item industria bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-emerald-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-oil-can"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full border border-emerald-200">Mantenimiento</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Lubricantes, Pinturas y Selladores</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        Grasas industriales, solventes, esmaltes anticorrosivos, epóxicos y silicones sintéticos para plantas.
+                    </p>
+                    <button onclick="prefillQuote('Mantenimiento MRO y Químicos')" class="text-emerald-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Item 6: Proyectos Especiales y Prototipos -->
+                <div class="cat-item especiales bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-blue-500 hover:shadow-lg transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-searchengin"></i>
+                        </div>
+                        <span class="text-xs font-semibold bg-purple-50 text-purple-700 px-3 py-1 rounded-full border border-purple-200">Sourcing Especial</span>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Refacciones e Insumos Especiales</h3>
+                    <p class="text-slate-600 text-sm mb-4">
+                        ¿Buscas una refacción descatalogada, material de importación o suministro urgente? Nosotros lo gestionamos.
+                    </p>
+                    <button onclick="prefillQuote('Sourcing y Refacciones Especiales')" class="text-purple-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+                        Solicitar Insumo <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRUST & WORKFLOW SECTION -->
+    <section id="nosotros" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-950"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs sm:text-sm">¿Por qué Arcan Global Soluciones?</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white mt-2">
+                    Tu Aliado Estratégico en Proveeduría y Comercio
+                </h2>
+                <p class="text-slate-300 mt-4 text-base sm:text-lg">
+                    Construimos relaciones duraderas basadas en la honestidad, rapidez en la respuesta y cumplimiento de garantías en cada entrega.
+                </p>
+            </div>
+
+            <!-- 4 Trust Pillars Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 hover:border-emerald-500 transition">
+                    <div class="w-12 h-12 rounded-xl gradient-arcan flex items-center justify-center text-xl text-white mb-4 shadow-lg">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Precios Competitivos</h3>
+                    <p class="text-slate-400 text-sm">
+                        Convenios directos con fabricantes de acero y distribuidores mayoristas que nos permiten dar los mejores precios del mercado.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 hover:border-cyan-500 transition">
+                    <div class="w-12 h-12 rounded-xl gradient-arcan flex items-center justify-center text-xl text-white mb-4 shadow-lg">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Entregas Puntuales</h3>
+                    <p class="text-slate-400 text-sm">
+                        Coordinación logística ágil para asegurar que tus materiales lleguen a tiempo a la obra o a tu almacén.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 hover:border-blue-500 transition">
+                    <div class="w-12 h-12 rounded-xl gradient-arcan flex items-center justify-center text-xl text-white mb-4 shadow-lg">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Calidad Certificada</h3>
+                    <p class="text-slate-400 text-sm">
+                        Materiales bajo estándares y normas oficiales (ASTM, NOM, ISO), garantizando seguridad en tus proyectos de ingeniería.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700/80 hover:border-purple-500 transition">
+                    <div class="w-12 h-12 rounded-xl gradient-arcan flex items-center justify-center text-xl text-white mb-4 shadow-lg">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Atención Personalizada</h3>
+                    <p class="text-slate-400 text-sm">
+                        Ejecutivos dedicados que entienden tus requerimientos técnicos y te brindan acompañamiento antes, durante y después del pedido.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Workflow Steps timeline -->
+            <div class="bg-slate-800/40 border border-slate-700/60 rounded-3xl p-8 sm:p-12">
+                <h3 class="text-2xl font-bold font-display text-center mb-10 text-white">
+                    Nuestro Proceso de Atención en 4 Sencillos Pasos
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                    
+                    <div class="text-center space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center font-black text-lg mx-auto">
+                            1
+                        </div>
+                        <h4 class="font-bold text-white text-base">Solicitud o Cotización</h4>
+                        <p class="text-xs text-slate-400">
+                            Envíanos tu lista de materiales, medidas, cantidades o planos por WhatsApp o correo.
+                        </p>
+                    </div>
+
+                    <div class="text-center space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 flex items-center justify-center font-black text-lg mx-auto">
+                            2
+                        </div>
+                        <h4 class="font-bold text-white text-base">Propuesta Rápida</h4>
+                        <p class="text-xs text-slate-400">
+                            Te enviamos la cotización detallada con precio, tiempo de entrega y fichas técnicas a la brevedad.
+                        </p>
+                    </div>
+
+                    <div class="text-center space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40 flex items-center justify-center font-black text-lg mx-auto">
+                            3
+                        </div>
+                        <h4 class="font-bold text-white text-base">Confirmación & Surtido</h4>
+                        <p class="text-xs text-slate-400">
+                            Aprobada la propuesta, preparamos y empaquetamos tus insumos bajo estrictos controles de calidad.
+                        </p>
+                    </div>
+
+                    <div class="text-center space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center font-black text-lg mx-auto">
+                            4
+                        </div>
+                        <h4 class="font-bold text-white text-base">Entrega en Destino</h4>
+                        <p class="text-xs text-slate-400">
+                            Despachamos directamente a la ubicación de tu empresa o sitio de construcción de forma segura.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE QUOTE CALCULATOR / FORM SECTION -->
+    <section id="cotizador" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-cyan-600 font-bold uppercase tracking-wider text-xs sm:text-sm">Cotizador Express</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2">
+                    Solicita tu Cotización al Instante
+                </h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">
+                    Llena los datos a continuación y nuestro equipo generará tu cotización formal de inmediato.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+                <div class="gradient-arcan p-6 text-white text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold font-display">Formulario de Requerimiento de Materiales</h3>
+                        <p class="text-xs text-slate-100 mt-1">Recibe respuesta por WhatsApp o Correo electrónico</p>
+                    </div>
+                    <span class="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold">
+                        <i class="fa-solid fa-bolt mr-1 text-yellow-300"></i> Cotización Prioritaria
+                    </span>
+                </div>
+
+                <form id="quoteForm" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-10 space-y-6">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Nombre Completo / Empresa *</label>
+                            <input type="text" id="quoteName" required placeholder="Ej. Arquitectura y Construcciones S.A." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm">
+                        </div>
+
+                        <!-- Phone / WhatsApp -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="quotePhone" required placeholder="Ej. +52 618 123 4567" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Correo Electrónico *</label>
+                            <input type="email" id="quoteEmail" required placeholder="ejemplo@empresa.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm">
+                        </div>
+
+                        <!-- Main Category Select -->
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Categoría Principal *</label>
+                            <select id="quoteCategory" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm text-slate-700">
+                                <option value="Aceros y Estructurales (Vigas, PTR, Lámina, Varilla)">Aceros y Estructurales (Vigas, PTR, Lámina, Varilla)</option>
+                                <option value="Herramientas y Maquinaria de Taller">Herramientas y Maquinaria de Taller</option>
+                                <option value="Insumos Industriales y EPP">Insumos Industriales y EPP</option>
+                                <option value="Mobiliario y Material de Oficina">Mobiliario y Material de Oficina</option>
+                                <option value="Suministro Especial / Refacción">Suministro Especial / Refacción</option>
+                                <option value="Varios / Proyecto Integral">Varios / Proyecto Integral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Detail & List of Materials -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Detalle de Materiales o Insumos (Especifica medidas, piezas o toneladas) *</label>
+                        <textarea id="quoteDetails" rows="4" required placeholder="Ejemplo:
+- 10 pzas de Viga IPR 8x15 lbs x 12m
+- 20 tramos de PTR 2x2 cal 12
+- 50 láminas Pintro R-101 calibre 26 x 6.10m
+- Ubicación de entrega: Durango, Dgo." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm"></textarea>
+                    </div>
+
+                    <!-- Destination & Channel -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Ciudad o Destino de Entrega</label>
+                            <input type="text" id="quoteCity" placeholder="Ej. Durango, Puebla, Monterrey..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">¿Cómo deseas recibir la cotización?</label>
+                            <div class="flex gap-4">
+                                <label class="flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
+                                    <input type="radio" name="sendVia" value="whatsapp" checked class="text-cyan-600 focus:ring-cyan-500">
+                                    <i class="fa-brands fa-whatsapp text-emerald-500 font-bold"></i> Por WhatsApp
+                                </label>
+                                <label class="flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
+                                    <input type="radio" name="sendVia" value="email" class="text-cyan-600 focus:ring-cyan-500">
+                                    <i class="fa-solid fa-envelope text-cyan-600"></i> Por Correo
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-end">
+                        <button type="submit" class="gradient-arcan text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-cyan-500/25 transition transform hover:-translate-y-0.5 text-base text-center">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Enviar Solicitud Ahora
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DIRECT CONTACT & LOCATION SECTION -->
+    <section id="contacto" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-600 font-bold uppercase tracking-wider text-xs sm:text-sm">Canales Oficiales</span>
+                <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 mt-2">
+                    Estamos Listos para Atenderte
+                </h2>
+                <p class="text-slate-600 mt-2 text-base">
+                    Comunícate directamente con nuestros ejecutivos comerciales a través de cualquiera de nuestras líneas oficiales.
+                </p>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1: Contacto Comercial Directo -->
+                <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-slate-800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 font-bold text-xs rounded-full mb-4 border border-emerald-500/30">
+                            Contacto Comercial Directo
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-white">Ventas y Cotizaciones</h3>
+                        <p class="text-xs text-slate-400 mt-1 mb-6">Atención técnica y cotización de materiales</p>
+
+                        <div class="space-y-4 text-sm text-slate-200">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-mobile-screen text-emerald-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <span class="block text-xs text-slate-400">Celular y WhatsApp</span>
+                                    <a href="tel:+526183296467" class="font-bold text-white hover:text-emerald-400 transition">+52 (618) 329 6467</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-envelope text-cyan-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <span class="block text-xs text-slate-400">Correos Electrónicos</span>
+                                    <a href="mailto:julio.arjon@arcangs.com" class="font-bold text-white hover:text-cyan-400 transition break-all block">julio.arjon@arcangs.com</a>
+                                    <a href="mailto:jesus.candia@arcangs.com" class="font-bold text-white/80 hover:text-cyan-400 transition break-all block text-xs mt-1">jesus.candia@arcangs.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex gap-3">
+                        <a href="https://wa.me/526183296467?text=Hola,%20requiero%20informaci%C3%B3n%20de%20materiales" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs text-center flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i> Abrir Chat
+                        </a>
+                        <a href="tel:+526183296467" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold p-3 rounded-xl text-xs text-center flex items-center justify-center transition">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Atención a Clientes -->
+                <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden flex flex-col justify-between border border-slate-800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl"></div>
+                    <div>
+                        <div class="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 font-bold text-xs rounded-full mb-4 border border-cyan-500/30">
+                            Servicio a Clientes & Pedidos
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-white">Atención a Clientes</h3>
+                        <p class="text-xs text-slate-400 mt-1 mb-6">Seguimiento de compras y cotizaciones</p>
+
+                        <div class="space-y-4 text-sm text-slate-200">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-brands fa-whatsapp text-emerald-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <span class="block text-xs text-slate-400">WhatsApp de Servicio</span>
+                                    <a href="https://wa.me/522225318652" target="_blank" class="font-bold text-white hover:text-emerald-400 transition">+52 (222) 531 8652</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-envelope text-cyan-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <span class="block text-xs text-slate-400">Correo Principal</span>
+                                    <a href="mailto:atencion_clientes@arcangs.com" class="font-bold text-white hover:text-cyan-400 transition break-all">atencion_clientes@arcangs.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex gap-3">
+                        <a href="https://wa.me/522225318652?text=Hola,%20busco%20atenci%C3%B3n%20a%20clientes" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs text-center flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Clientes
+                        </a>
+                        <a href="mailto:atencion_clientes@arcangs.com" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold p-3 rounded-xl text-xs text-center flex items-center justify-center transition">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Presencia y Horarios -->
+                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-800 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold font-display text-slate-900">Cobertura & Horarios</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-6">Atención a toda la República Mexicana</p>
+
+                        <div class="space-y-4 text-xs text-slate-700">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-clock text-cyan-600 text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="block text-slate-900 text-sm mb-1">Horario de Atención:</strong>
+                                    <p class="text-slate-700 font-medium"><strong>Lunes a Viernes:</strong> 9:00 AM - 17:30 hrs</p>
+                                    <p class="text-slate-700 font-medium"><strong>Sábados:</strong> 9:00 AM - 13:00 hrs</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-map-location-dot text-cyan-600 text-base mt-0.5"></i>
+                                <div>
+                                    <strong class="block text-slate-900 text-sm mb-1">Suministro Nacional:</strong>
+                                    Envíos coordinados a cualquier punto del país para proyectos de pequeña, mediana y gran escala.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-200">
+                        <span class="text-xs font-semibold text-slate-500 block text-center mb-1">Slogan Oficial</span>
+                        <div class="text-center font-display font-extrabold text-sm text-gradient-arcan">
+                            "Soluciones precisas a tus necesidades"
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FLOATING WHATSAPP BUTTON WITH DROPDOWN ACTION -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="toggleWaModal()" class="pulse-whatsapp bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-emerald-600 transition">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </button>
+
+        <!-- WhatsApp quick contacts popup -->
+        <div id="waModal" class="hidden absolute bottom-16 right-0 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 p-5 z-50 animate-fade-in">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                    <h4 class="font-bold text-slate-900 text-sm">Contactar por WhatsApp</h4>
+                </div>
+                <button onclick="toggleWaModal()" class="text-slate-400 hover:text-slate-600 text-xs">
+                    <i class="fa-solid fa-xmark text-base"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Elige la línea con la que deseas comunicarte:</p>
+            
+            <div class="space-y-3">
+                <a href="https://wa.me/526183296467?text=Hola,%20solicito%20informaci%C3%B3n%20de%20materiales" target="_blank" class="block bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 p-3 rounded-xl transition">
+                    <div class="font-bold text-slate-900 text-xs">Ventas y Cotizaciones</div>
+                    <div class="text-[11px] text-emerald-600 font-semibold mt-0.5"><i class="fa-brands fa-whatsapp mr-1"></i> +52 (618) 329 6467</div>
+                </a>
+
+                <a href="https://wa.me/522225318652?text=Hola,%20requiero%20atenci%C3%B3n%20a%20clientes" target="_blank" class="block bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 p-3 rounded-xl transition">
+                    <div class="font-bold text-slate-900 text-xs">Atención a Clientes</div>
+                    <div class="text-[11px] text-emerald-600 font-semibold mt-0.5"><i class="fa-brands fa-whatsapp mr-1"></i> +52 (222) 531 8652</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
+                
+                <!-- Brand details -->
+                <div class="md:col-span-5 space-y-4">
+                    <div>
+                        <span class="font-display font-black text-xl sm:text-2xl tracking-wider text-teal-400 block">
+                            ARCAN GLOBAL SOLUCIONES
+                        </span>
+                        <span class="font-display font-bold text-xs tracking-[0.25em] text-blue-400 uppercase block mt-1">
+                            IMPULSANDO TU NEGOCIO
+                        </span>
+                    </div>
+                    <p class="text-slate-400 max-w-sm leading-relaxed">
+                        Comercializadora mexicana comprometida con la entrega oportuna de aceros, vigas, PTR’s, láminas e insumos integrales para la industria, empresas y construcción.
+                    </p>
+                    <p class="font-semibold text-emerald-400">
+                        "Soluciones precisas a tus necesidades"
+                    </p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Especialidades</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#aceros" class="hover:text-cyan-400 transition">Vigas IPR e IPS</a></li>
+                        <li><a href="#aceros" class="hover:text-cyan-400 transition">PTR's y Tubulares</a></li>
+                        <li><a href="#aceros" class="hover:text-cyan-400 transition">Láminas Galv. y Pintro</a></li>
+                        <li><a href="#aceros" class="hover:text-cyan-400 transition">Varilla Corrugada y Malla</a></li>
+                        <li><a href="#catalogo" class="hover:text-cyan-400 transition">Herramientas e Insumos Taller</a></li>
+                    </ul>
+                </div>
+
+                <!-- Direct contacts list -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Líneas de Atención</h4>
+                    <ul class="space-y-2">
+                        <li><strong class="text-slate-200">Ventas / WhatsApp 1:</strong> +52 (618) 329 6467</li>
+                        <li><strong class="text-slate-200">Atención / WhatsApp 2:</strong> +52 (222) 531 8652</li>
+                        <li><strong class="text-slate-200">Correo Ventas 1:</strong> julio.arjon@arcangs.com</li>
+                        <li><strong class="text-slate-200">Correo Ventas 2:</strong> jesus.candia@arcangs.com</li>
+                        <li><strong class="text-slate-200">Atención a Clientes:</strong> atencion_clientes@arcangs.com</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+                <p>&copy; 2026 Arcan Global Soluciones. Todos los derechos reservados.</p>
+                <p>Comercialización & Suministros Industriales</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT INTERACTIONS -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // WhatsApp Modal Toggle
+        function toggleWaModal() {
+            const modal = document.getElementById('waModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Catalog Filter Logic
+        function filterCatalog(category) {
+            const buttons = document.querySelectorAll('.cat-btn');
+            const items = document.querySelectorAll('.cat-item');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-cat') === category) {
+                    btn.classList.add('bg-slate-900', 'text-white', 'shadow');
+                    btn.classList.remove('bg-slate-100', 'text-slate-700');
+                } else {
+                    btn.classList.remove('bg-slate-900', 'text-white', 'shadow');
+                    btn.classList.add('bg-slate-100', 'text-slate-700');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Prefill Quote Form from Product Buttons
+        function prefillQuote(productName) {
+            const textarea = document.getElementById('quoteDetails');
+            textarea.value = `Requiero cotización para: ${productName}\n- Cantidad / Medidas: \n- Especificaciones técnicas: `;
+            
+            // Scroll smoothly to quote section
+            document.getElementById('cotizador').scrollIntoView({ behavior: 'smooth' });
+            textarea.focus();
+        }
+
+        // Handle Form Submit
+        function handleFormSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('quoteName').value;
+            const phone = document.getElementById('quotePhone').value;
+            const email = document.getElementById('quoteEmail').value;
+            const category = document.getElementById('quoteCategory').value;
+            const details = document.getElementById('quoteDetails').value;
+            const city = document.getElementById('quoteCity').value || 'No especificada';
+            
+            const viaRadios = document.getElementsByName('sendVia');
+            let sendVia = 'whatsapp';
+            for (let radio of viaRadios) {
+                if (radio.checked) sendVia = radio.value;
+            }
+
+            if (sendVia === 'whatsapp') {
+                const textMsg = `*NUEVA SOLICITUD DE COTIZACIÓN - ARCAN GLOBAL*%0A` +
+                    `*Cliente:* ${encodeURIComponent(name)}%0A` +
+                    `*Teléfono:* ${encodeURIComponent(phone)}%0A` +
+                    `*Correo:* ${encodeURIComponent(email)}%0A` +
+                    `*Categoría:* ${encodeURIComponent(category)}%0A` +
+                    `*Destino:* ${encodeURIComponent(city)}%0A` +
+                    `*Detalle:* ${encodeURIComponent(details)}`;
+                
+                // Open WhatsApp directly to Sales or Customer Service
+                window.open(`https://wa.me/526183296467?text=${textMsg}`, '_blank');
+            } else {
+                // Email format fallback
+                const subject = encodeURIComponent(`Solicitud de Cotización: ${category} - ${name}`);
+                const body = encodeURIComponent(`Nombre: ${name}\nTeléfono: ${phone}\nCorreo: ${email}\nCategoría: ${category}\nDestino: ${city}\n\nDetalle de solicitud:\n${details}`);
+                window.location.href = `mailto:atencion_clientes@arcangs.com?subject=${subject}&body=${body}`;
+            }
+        }
+    </script>
+</body>
+</html>
